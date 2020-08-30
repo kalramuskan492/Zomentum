@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Chat app</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="./main.css" />
+</head>
+
+<body>
+
+    <div id="chat-container">
+        <div id="search-container">
+            <input type="text" placeholder="Search" />
+        </div>
+        <div id="conversation-list">
+            <div class="conversation active">
+                <img src="./assets/profiles/4018.jpg" alt="Chikkie" />
+                <div class="title-text">
+                    Chikkie
+                </div>
+                <div class="created-date">
+                    Aug 30
+                </div>
+                <div class="conversation-message">
+                    When are you coming?
+                </div>
+            </div>
+            <div class="conversation">
+                <img src="./assets/profiles/4130.jpg" alt="Chikkie" />
+                <div class="title-text">
+                    Vanshika
+                </div>
+                <div class="created-date">
+                    Aug 30
+                </div>
+                <div class="conversation-message">
+                    U know what's going on?
+                </div>
+            </div>
+            <div class="conversation">
+                <img src="./assets/profiles/4160.jpg" alt="Chikkie" />
+                <div class="title-text">
+                    Muskan
+                </div>
+                <div class="created-date">
+                    Aug 30
+                </div>
+                <div class="conversation-message">
+                    Fifth floor A block.
+                </div>
+            </div>
+            <div class="conversation">
+                <img src="./assets/profiles/4018.jpg" alt="Chikkie" />
+                <div class="title-text">
+                    Divyansh
+                </div>
+                <div class="created-date">
+                    Aug 30
+                </div>
+                <div class="conversation-message">
+                    Are u all right?
+                </div>
+            </div>
+
+        </div>
+        <div id="new-message-container">
+            <a href="#">+</a>
+        </div>
+        <div id="chat-title">
+            <span id="person-name"> Chikkie</span>
+            <img src="https://img.icons8.com/bubbles/50/000000/trash.png" alt="Delete conversation" />
+
+        </div>
+        <div id="chat-message-list">
+            
+            <div class="message-row other-message">
+                <div class="message-content">
+                    <img src="./assets/profiles/4018.jpg" alt="Chikkie" />
+                    <div class="message-text">Tomorrow at 8:00 AM be ready</div>
+                    <div class="message-time">Aug 31</div>
+                </div>
+            </div>
+
+            <div class="message-row you-message">
+                <div class="message-content">
+                    <div class="message-text">Yeah sure</div>
+                    <div class="message-time">Aug 31</div>
+                </div>
+            </div>
+
+            <div class="message-row other-message">
+                <div class="message-content">
+                    <img src="./assets/profiles/4018.jpg" alt="Chikkie" />
+                    <div class="message-text" id="put">We will go for a walk</div>
+                    <div class="message-time">Aug 31</div>
+                </div>
+            </div>
+
+            <div class="message-row you-message">
+                <div class="message-content">
+                    <div class="message-text">Yass!</div>
+                    <div class="message-time">Aug 31</div>
+                </div>
+            </div>
+
+            <div class="message-row other-message">
+                <div class="message-content">
+                    <img src="./assets/profiles/4018.jpg" alt="Chikkie" />
+                    <div class="message-text">we will meet soon</div>
+                    <div class="message-time">Aug 31</div>
+                </div>
+            </div>
+
+            <div class="message-row you-message">
+                <div class="message-content">
+                    <div class="message-text">Ok then</div>
+                    <div class="message-time">Aug 31</div>
+                </div>
+            </div>
+ 
+        </div>
+        <div>
+            <ul id="messages"></ul>
+        </div>
+        <div id="chat-form">
+            <img src="https://img.icons8.com/bubbles/50/000000/attach.png" alt="Add attachment" />
+            <input id="textbox" type="text" placeholder="Type a message" />
+            <div align="right" id="button"><button id="send-btn" type="button">Send</div>
+
+        </div>
+    </div>
+    <script src="./js/faker.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
